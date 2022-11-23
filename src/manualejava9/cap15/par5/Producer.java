@@ -13,12 +13,15 @@ public class Producer implements Runnable {
 				wareHouse.put(i);
 		}
 	}
-	
+
 //	public void run() {
 //		for (int i = 1; i <= 10; i++) {
 //			try {
 //				wareHouse.put(i);
-//				wareHouse.wait();
+//				if(!wareHouse.isEmpty())	
+//				synchronized (wareHouse) {
+//					wareHouse.wait();
+//				}
 //			} catch (InterruptedException e) {
 //				e.printStackTrace();
 //			}

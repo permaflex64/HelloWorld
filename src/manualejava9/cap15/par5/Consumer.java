@@ -18,6 +18,10 @@ public class Consumer implements Runnable {
 //	public void run() {
 //		for (int i = 0; i < 10; i++) {
 //				 wareHouse.get();
+//				 if(wareHouse.isEmpty())
+//				 synchronized (wareHouse) {
+//					wareHouse.notify();
+//				}
 //		}
 //	}
 //	public void run() {

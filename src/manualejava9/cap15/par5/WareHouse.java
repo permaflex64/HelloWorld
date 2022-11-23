@@ -1,8 +1,12 @@
 package manualejava9.cap15.par5;
 
-public class WareHouse {
+public /*final*/ class WareHouse {
 	private int idProduct;
 	private int numberOfProducts;
+	
+	public WareHouse() {
+		numberOfProducts = 0;
+	}
 	
 	public synchronized boolean isEmpty() {
 		return numberOfProducts < 1;
