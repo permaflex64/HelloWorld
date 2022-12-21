@@ -5,7 +5,7 @@ package manualejava9.cap16.par1;
 public class ClassiAnVsFunc {
 
 	public static void main(String[] args) {
-
+		//classe anonima
 		new Thread(new Runnable() {
 
 			@Override
@@ -13,7 +13,7 @@ public class ClassiAnVsFunc {
 				System.out.println("Prima di Java 8: Classe anonima");
 			}
 		}).start();
-		// *
+		//lambda
 		new Thread(() -> System.out.println("Da Java 8: Funzione anonima")).start();
 
 		Runnable r = () -> System.out.println("Da Java 8: Funzione anonima 2");
